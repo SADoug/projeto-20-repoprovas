@@ -7,6 +7,7 @@ async function insert(req: Request, res: Response) {
 }
 
 async function find(req: Request, res: Response) {
+  console.log("OPA")
   const { groupBy, teacher, discipline } = req.query as { groupBy: string; teacher: string; discipline: string };
   
   if (groupBy !== "disciplines" && groupBy !== "teachers") {
